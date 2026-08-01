@@ -1,0 +1,18 @@
+{
+  "x": {
+    "importance_mean": 0.09340620149065008,
+    "importance_std": 0.00444028589249936
+  },
+  "y": {
+    "importance_mean": 0.21113837157176,
+    "importance_std": 0.014390866688044061
+  },
+  "julian_day": {
+    "importance_mean": 1.113361365105142,
+    "importance_std": 0.06641577534735443
+  },
+  "ndvi": {
+    "importance_mean": 0.20527876767668168,
+    "importance_std": 0.010341396589411953
+  }
+}
