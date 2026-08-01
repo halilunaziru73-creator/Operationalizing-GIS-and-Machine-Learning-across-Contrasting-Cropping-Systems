@@ -9,79 +9,86 @@ Grape Ripening Prediction."**
 
 ## Figures
 
-All 21 manuscript figures, grouped by case study. Each panel is labelled
-(A)(B)(C)... in plain black text.
+All 21 manuscript figures, extracted directly from the manuscript and presented
+in their original figure order:
 
-### 1. Maize Fertility Zoning
+### Maize Fertility Zoning (Coimbra)
 
-![Study area](figures/corn_grid1_studyarea.jpg)
-**Figure 10** — Study area
+![Study area](figures/Figure_01_maize_study_area.jpg)
+**Figure 1** — Study-area delineation for the Coimbra maize field.
 
-![Soil maps](figures/corn_grid2_soilmaps.jpg)
-**Figure 11** — Soil maps
+![IDW interpolation](figures/Figure_02_maize_idw_interpolation.jpg)
+**Figure 2** — Inverse-distance-weighted interpolation surfaces.
 
-![NDVI](figures/corn_grid3_ndvi.jpg)
-**Figure 12** — NDVI
+![NDVI temporal dynamics](figures/Figure_03_maize_ndvi_temporal.jpg)
+**Figure 3** — Temporal NDVI dynamics across the growing season.
 
-![Water](figures/corn_grid4_water.jpg)
-**Figure 13** — Water and irrigation
+![Water sampling design](figures/Figure_04_maize_water_sampling.jpg)
+**Figure 4** — Water sampling design and interpolated surfaces.
 
-![Stats](figures/corn_grid5_stats.jpg)
-**Figure 14** — Statistical summary
+### Vineyard Pest Monitoring (Quinta da Senhora da Graça)
 
-![Model performance](figures/corn_grid6_modelperf.jpg)
-**Figure 15** — Model performance
+![Terrain characterisation](figures/Figure_05_vineyard_terrain.jpg)
+**Figure 5** — Terrain characterisation of the study vineyard.
 
-![VRT](figures/corn_grid7_vrt.jpg)
-**Figure 16** — Variable-rate technology (VRT) prescription map
+![Land-use and varietal composition](figures/Figure_06_vineyard_landuse_varietal.jpg)
+**Figure 6** — Land-use and varietal composition.
 
-### 2. Vineyard Pest Monitoring
+![Pheromone trap network](figures/Figure_07_vineyard_pest_trap_network.jpg)
+**Figure 7** — Pheromone trap network and spatio-temporal pest dynamics.
 
-![Terrain](figures/gm_grid1_terrain.jpg)
-**Figure 17** — Terrain
+### Grape Ripening / Brix Prediction (Quinta de Nossa Senhora de Lurdes)
 
-![Land use](figures/gm_grid2_landuse.jpg)
-**Figure 18** — Land use
+![Study-site characterisation](figures/Figure_08_grape_study_site.jpg)
+**Figure 8** — Study-site characterisation.
 
-![Pest monitoring](figures/gm_grid3_pest.jpg)
-**Figure 18C** — Pest monitoring (trap locations)
+![Ripening regression forecast](figures/Figure_09_grape_ripening_regression_forecast.jpg)
+**Figure 9** — Regression-based ripening forecast.
 
-### 3. Grape Ripening / Brix Prediction
+![Brix — traditional field sampling](figures/Figure_10_grape_brix_traditional_sampling.jpg)
+**Figure 10** — Spatially interpolated Brix values from traditional field
+sampling.
 
-![Study site](figures/bx_grid1_studysite.jpg)
-**Figure 1** — Study site
+![Brix — UTAD Enology plots](figures/Figure_11_grape_brix_utad_plots.jpg)
+**Figure 11** — Spatially interpolated Brix values from the UTAD Enology
+experimental plots.
 
-![Regression](figures/bx_grid2_regression.jpg)
-**Figure 2** — Regression
+![Brix by Thiessen polygons](figures/Figure_12_grape_brix_thiessen_polygons.jpg)
+**Figure 12** — Brix values partitioned by Thiessen/Voronoi polygons.
 
-![Brix sampling](figures/bx_grid3_brixsampling.jpg)
-**Figure 3** — Brix sampling
+![Regression diagnostics and remote sensing](figures/Figure_13_grape_regression_diagnostics_remote_sensing.jpg)
+**Figure 13** — Regression diagnostics and remote-sensing products for ripening
+prediction.
 
-![Experimental design](figures/bx_grid4_experimental.jpg)
-**Figure 4** — Experimental design
+### Maize Fertility Zoning — Model Outputs
 
-![Thiessen polygons](figures/bx_grid5_thiessen.jpg)
-**Figure 5** — Thiessen polygons
+![Descriptive and correlation analysis](figures/Figure_14_maize_descriptive_correlation_analysis.jpg)
+**Figure 14** — Descriptive and correlation analysis for the Coimbra maize
+field.
 
-![Remote sensing](figures/bx_grid6_remotesensing.jpg)
-**Figure 6** — Remote sensing
+![Model performance and zonation](figures/Figure_15_maize_model_performance_zonation.jpg)
+**Figure 15** — Model performance and zonation outputs.
 
-### 4. Machine-Learning Results
+![Variable-rate prescription maps](figures/Figure_16_maize_variable_rate_prescription.jpg)
+**Figure 16** — Variable-rate prescription maps.
 
-![Model comparison](figures/ml_grid1_model_comparison.jpg)
-**Figure 17** — Model comparison (cross-validated RMSE/MAE/R²)
+### Machine-Learning Results (Grape Ripening)
 
-![Feature importance](figures/ml_grid2_feature_importance.jpg)
-**Figure 18** — Feature and permutation importance
+![Cross-validated model comparison](figures/Figure_17_grape_ml_model_comparison.jpg)
+**Figure 17** — Cross-validated model comparison for Brix prediction across
+seven models.
 
-![Observed vs predicted](figures/ml_grid3_observed_vs_predicted.jpg)
-**Figure 19** — Observed vs. predicted
+![Feature importance](figures/Figure_18_grape_ml_feature_importance.jpg)
+**Figure 18** — Feature importance for Brix prediction.
 
-![Hybrid surface map](figures/ml_grid4_hybrid_surface_map.jpg)
-**Figure 20** — Hybrid regression-kriging surface map
+![Moran's I](figures/Figure_19_grape_morans_i.jpg)
+**Figure 19** — Global Moran's I spatial autocorrelation of raw Brix values.
 
-![Moran's I](figures/ml_grid5_morans_i.jpg)
-**Figure 21** — Moran's I spatial autocorrelation
+![Observed vs. predicted](figures/Figure_20_grape_observed_vs_predicted.jpg)
+**Figure 20** — Out-of-fold observed-versus-predicted Brix values.
+
+![Spatial interpolation, 30 August](figures/Figure_21_grape_spatial_interpolation_30aug.jpg)
+**Figure 21** — Spatial interpolation surfaces for 30 August Brix.
 
 ---
 
@@ -104,9 +111,9 @@ code/         All Python source code used in this project:
                   and permutation importance.
                 - make_ml_figures.py           : generates the model-comparison,
                   feature-importance, Moran's I, and observed-vs-predicted
-                  figures (Figures 17–19).
+                  analysis charts.
                 - make_hybrid_map.py           : generates the spatial hybrid
-                  regression-kriging surface map (Figure 20).
+                  regression-kriging surface map.
                 - make_grid.py                 : builds the labelled A/B/C...
                   figure grids from the field-photo/GIS-map source images.
                 - translate_legend.py          : translates the Portuguese GIS
@@ -130,13 +137,12 @@ results/      Model outputs:
                   cross-validation results.
                 - morans_i_brix.json             : global Moran's I
                   spatial-autocorrelation statistic for Brix at each sampling
-                  date (Figure 21).
+                  date (Figure 19).
                 - permutation_importance.json    : permutation importance for
                   Easting, Northing, Julian day, and NDVI (Figure 18).
 
-figures/      All 21 manuscript figure images (JPEG): the 5 machine-learning
-              figures (ml_grid1–5) and the 16 case-study figure grids (corn_*,
-              gm_*, bx_*), each labelled with plain (A)(B)(C)... panel letters.
+figures/      All 21 manuscript figures, extracted directly from the
+              manuscript, in original figure order (Figure_01–Figure_21).
 ```
 
 ## How to reproduce the machine-learning analysis
@@ -148,8 +154,8 @@ gradient-boosted decision-tree models.
 ```bash
 cd code
 python3 train_regression_kriging.py   # trains models, cross-validates, writes results/
-python3 make_ml_figures.py            # writes figures/ml_grid1-3
-python3 make_hybrid_map.py            # writes figures/ml_grid4 (spatial surface map)
+python3 make_ml_figures.py            # writes machine-learning analysis charts
+python3 make_hybrid_map.py            # writes the spatial hybrid surface map
 ```
 
 ## Results summary
