@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "Integrated GIS, Remote-Sensing, and Machine-Learning Precision Agriculture Across Three Portuguese Cropping Systems: Maize Fertility Zoning, Vineyard Pest Monitoring, and Machine-Learning-Enhanced Grape Ripening Prediction"
+authors:
+  - family-names: Halilu
+    given-names: Naziru
+repository-code: "https://github.com/halilunaziru73-creator/Operationalizing-GIS-and-Machine-Learning-across-Contrasting-Cropping-Systems"
+license: MIT
+date-released: "2026-08-02"
+keywords:
+  - GIS
+  - remote sensing
+  - machine learning
+  - precision agriculture
+  - viticulture
+  - regression kriging
