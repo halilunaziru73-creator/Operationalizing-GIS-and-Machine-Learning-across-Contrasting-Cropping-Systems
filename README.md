@@ -145,11 +145,26 @@ figures/      All 21 manuscript figures, extracted directly from the
               manuscript, in original figure order (Figure_01–Figure_21).
 ```
 
-## How to reproduce the machine-learning analysis
+## How to Run the Code
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/halilunaziru73-creator/Operationalizing-GIS-and-Machine-Learning-across-Contrasting-Cropping-Systems.git
+cd Operationalizing-GIS-and-Machine-Learning-across-Contrasting-Cropping-Systems
+```
+
+### 2. Install dependencies
 
 Requirements: Python 3, `pandas`, `numpy`, `scipy`, `scikit-learn`, `matplotlib`.
 `scikit-learn`'s `GradientBoostingRegressor` is used to implement the
 gradient-boosted decision-tree models.
+
+```bash
+pip install pandas numpy scipy scikit-learn matplotlib
+```
+
+### 3. Reproduce the machine-learning analysis
 
 ```bash
 cd code
