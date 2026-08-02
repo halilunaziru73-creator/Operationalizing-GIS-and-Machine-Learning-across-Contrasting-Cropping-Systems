@@ -10,6 +10,17 @@ Machine-Learning Precision Agriculture Across Three Portuguese Cropping Systems:
 Maize Fertility Zoning, Vineyard Pest Monitoring, and Machine-Learning-Enhanced
 Grape Ripening Prediction."**
 
+## Table of Contents
+
+- [Figures](#figures)
+- [Repository structure](#repository-structure)
+- [How to Run the Code](#how-to-run-the-code)
+- [Results summary](#results-summary)
+- [Data provenance](#data-provenance)
+- [License](#license)
+- [Citation](#citation)
+- [Related work](#related-work)
+
 ## Figures
 
 All 21 manuscript figures, extracted directly from the manuscript and presented
