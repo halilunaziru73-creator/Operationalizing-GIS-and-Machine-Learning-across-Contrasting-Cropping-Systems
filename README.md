@@ -1,5 +1,7 @@
 # Operationalizing GIS and Machine Learning across Contrasting Cropping Systems
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
+
 **Author:** Naziru Halilu
 
 This repository accompanies the manuscript **"Integrated GIS, Remote-Sensing, and
@@ -202,6 +204,12 @@ from this dataset.
 ## License
 
 Released under the [MIT License](./LICENSE).
+
+## Citation
+
+If you use this repository, please cite it using the metadata in
+[`CITATION.cff`](./CITATION.cff) (GitHub renders a "Cite this repository"
+button on the repo's main page, in the top-right "About" panel).
 
 ## Related work
 
