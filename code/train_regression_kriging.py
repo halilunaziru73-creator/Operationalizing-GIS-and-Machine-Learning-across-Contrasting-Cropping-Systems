@@ -23,8 +23,7 @@ All models are evaluated using repeated spatial k-fold cross-validation (not a s
 train/test split), and are compared using RMSE, MAE and R-squared computed strictly on
 held-out points.
 
-Author: Naziru Halilu (analysis pipeline drafted with Claude, Anthropic, for manuscript
-preparation). Data collected in the field as part of the original UTAD practicum.
+Author: Naziru Halilu. Data collected in the field as part of the original UTAD practicum.
 """
 
 import json
