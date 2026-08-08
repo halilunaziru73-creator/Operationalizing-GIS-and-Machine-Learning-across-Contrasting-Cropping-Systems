@@ -11,6 +11,8 @@ Maize Fertility Zoning, Vineyard Pest Monitoring, and Machine-Learning-Enhanced
 Grape Ripening Prediction."**
 
 
+![Graphical Abstract](graphical_abstract.png)
+
 ## Problem, Methodology, and Results
 
 **Problem.** Farm-scale precision-agriculture case studies are common in training and consultancy settings but are rarely synthesised into a single comparative analysis across contrasting cropping systems.
