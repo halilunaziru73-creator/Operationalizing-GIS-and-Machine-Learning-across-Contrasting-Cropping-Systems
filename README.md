@@ -10,6 +10,15 @@ Machine-Learning Precision Agriculture Across Three Portuguese Cropping Systems:
 Maize Fertility Zoning, Vineyard Pest Monitoring, and Machine-Learning-Enhanced
 Grape Ripening Prediction."**
 
+
+## Problem, Methodology, and Results
+
+**Problem.** Farm-scale precision-agriculture case studies are common in training and consultancy settings but are rarely synthesised into a single comparative analysis across contrasting cropping systems.
+
+**Methodology.** Three independent GIS and remote-sensing field campaigns in northern and central Portugal were integrated into one comparative framework: (i) spatial fertility mapping and variable-rate prescription for a maize field in Coimbra (16.85 ha); (ii) GIS-based monitoring of the European grapevine moth across three generations at Quinta da Senhora da Graça, Douro (42.97 ha); and (iii) Brix-based ripening and harvest-date prediction integrated with NDVI monitoring at Quinta de Nossa Senhora de Lurdes, Vila Real (6 ha). Inverse Distance Weighting, Thiessen/Voronoi tessellation, and multispectral vegetation indices converted point-sampled measurements into continuous management surfaces.
+
+**Results.** In the maize system, yield correlated strongly with deep soil-water content (r = 0.972) and potassium oxide (r = 0.751); a quadratic yield–fertiliser regression (R² = 0.995) supported a variable-rate NPK/liming programme that cut total lime demand by 2.69 t versus uniform application. In the vineyard pest system, pheromone-trap captures showed a consistent three-generation spatial pattern, with a second-generation surge (trap counts 16–18) driving the principal within-season damage peak. In the ripening system, a logarithmic Brix–Julian-day regression (R² = 0.978) forecast harvest maturity (25.5–27 °Bx) around 13 September, and an NDVI–Brix regression explained 88% of variance (R² = 0.880).
+
 ## Table of Contents
 
 - [Figures](#figures)
