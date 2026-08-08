@@ -30,6 +30,8 @@
   .bubble-name { font-size:12px; color:var(--text-secondary); margin:0 0 4px; }
   .bubble { background:var(--bg); border-radius:12px; border-top-left-radius:4px; padding:0.85rem 1rem;
     min-height:52px; display:flex; align-items:center; font-size:14.5px; line-height:1.6; }
+  .step-figure { width:100%; border-radius:10px; border:1px solid var(--border); margin:12px 0 4px; display:block; }
+  .step-figure-cap { font-size:11.5px; color:var(--text-secondary); margin:0 0 12px; }
   .figure { width:100%; border-radius:10px; border:1px solid var(--border); margin-bottom:1.25rem; display:block; }
   .ask-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; margin-top:1.25rem; }
   .ask-title { font-size:15px; font-weight:600; margin:0 0 4px; }
@@ -71,6 +73,8 @@
       <div class="bubble-col">
         <p class="bubble-name">Naziru explains this step</p>
         <div class="bubble" id="detail"></div>
+        <img class="step-figure" id="step-figure" src="" alt="">
+        <p class="step-figure-cap" id="step-figure-cap"></p>
       </div>
     </div>
   </div>
@@ -129,7 +133,7 @@ async function sendQuestion() {
 }
 </script>
 <script>
-const steps = [{"t": "3 independent field campaigns", "d": "Maize, vineyard pest monitoring, and grape ripening \u2014 three separate Portuguese field studies stitched into one comparative lens most consultancy work never bothers to build."}, {"t": "Interpolation & vegetation indices", "d": "IDW, Thiessen tessellation and multispectral indices turn scattered point samples into full-field management maps."}, {"t": "Site-specific regression models", "d": "Across all three systems, a strikingly small number of variables explained most of the story: soil water and potassium for maize (r up to 0.972), and NDVI alone for grape ripening (R\u00b2 = 0.880)."}, {"t": "Cross-system synthesis", "d": "Comparing all three side by side revealed where machine learning actually earns its keep and where it doesn't \u2014 the maize system has enough correlated signal to reward it; the ripening system is dominated by one variable and a strong seasonal trend, so simpler wins."}, {"t": "Operational recommendations", "d": "The maize variable-rate programme alone cut total lime demand by 2.69 tonnes versus blanket application \u2014 a real input saving, not a hypothetical one."}];
+const steps = [{"t": "3 independent field campaigns", "img": "../figures/Figure_01_maize_study_area.jpg", "d": "Maize, vineyard pest monitoring, and grape ripening \u2014 three separate Portuguese field studies (Coimbra, Douro, Vila Real) stitched into one comparative lens most consultancy work never bothers to build."}, {"t": "Interpolation & VIs", "img": "../figures/Figure_02_maize_idw_interpolation.jpg", "d": "Inverse Distance Weighting, Thiessen/Voronoi tessellation and multispectral vegetation indices turn scattered point samples into full-field, continuous management surfaces."}, {"t": "Site-specific models", "img": "../figures/Figure_15_maize_model_performance_zonation.jpg", "d": "Across all three systems, a strikingly small number of variables explained most of the story: soil water and potassium for maize (r up to 0.972), and NDVI alone for grape ripening (R\u00b2 = 0.880)."}, {"t": "Cross-system synthesis", "img": "../figures/Figure_17_grape_ml_model_comparison.jpg", "d": "Comparing all three side by side revealed where machine learning actually earns its keep and where it doesn't \u2014 the maize system has enough correlated signal to reward it; the single-variable Brix system doesn't."}, {"t": "Recommendations", "img": "../figures/Figure_16_maize_variable_rate_prescription.jpg", "d": "The maize variable-rate programme alone cut total lime demand by 2.69 tonnes versus blanket application \u2014 a real input saving translated directly from the model into a field prescription map."}];
 let idx = 0;
 let timer = null;
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -174,6 +178,18 @@ function render() {
   });
   document.getElementById('detail').textContent = 'Step ' + (idx + 1) + ' — ' + steps[idx].t + '. ' + steps[idx].d;
   document.getElementById('particle').setAttribute('cx', nodeX(idx, steps.length));
+  const fig = document.getElementById('step-figure');
+  const cap = document.getElementById('step-figure-cap');
+  if (steps[idx].img) {
+    fig.src = steps[idx].img;
+    fig.alt = steps[idx].t;
+    fig.style.display = 'block';
+    cap.textContent = 'Figure from the manuscript — ' + steps[idx].t;
+    cap.style.display = 'block';
+  } else {
+    fig.style.display = 'none';
+    cap.style.display = 'none';
+  }
 }
 
 function tick() { idx = (idx + 1) % steps.length; render(); }
