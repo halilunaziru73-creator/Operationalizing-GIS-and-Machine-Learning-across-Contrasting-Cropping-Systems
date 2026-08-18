@@ -11,8 +11,6 @@ Maize Fertility Zoning, Vineyard Pest Monitoring, and Machine-Learning-Enhanced
 Grape Ripening Prediction."**
 
 
-![Graphical Abstract](graphical_abstract.png)
-
 **Workflow sketch**
 
 ![Workflow Sketch](workflow_sketch.png)
