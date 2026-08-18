@@ -11,13 +11,13 @@ Maize Fertility Zoning, Vineyard Pest Monitoring, and Machine-Learning-Enhanced
 Grape Ripening Prediction."**
 
 
+## Problem, Methodology, and Results
+
 **Workflow sketch**
 
 ![Workflow Sketch](workflow_sketch.png)
 
 [View interactive graphical abstract →](https://halilunaziru73-creator.github.io/Operationalizing-GIS-and-Machine-Learning-across-Contrasting-Cropping-Systems/)
-
-## Problem, Methodology, and Results
 
 **Problem.** Farm-scale precision-agriculture case studies are common in training and consultancy settings but are rarely synthesised into a single comparative analysis across contrasting cropping systems.
 
