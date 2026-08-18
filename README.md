@@ -13,6 +13,10 @@ Grape Ripening Prediction."**
 
 ![Graphical Abstract](graphical_abstract.png)
 
+**Workflow sketch**
+
+![Workflow Sketch](workflow_sketch.png)
+
 [View interactive graphical abstract →](https://halilunaziru73-creator.github.io/Operationalizing-GIS-and-Machine-Learning-across-Contrasting-Cropping-Systems/)
 
 ## Problem, Methodology, and Results
