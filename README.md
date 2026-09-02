@@ -44,134 +44,134 @@ in their original figure order:
 ### Maize Fertility Zoning (Coimbra)
 
 ![Study area](figures/Figure_01_maize_study_area.jpg)
-**Figure 1** — Study-area delineation for the Coimbra maize field.
+**Figure 1**, Study-area delineation for the Coimbra maize field.
 
 ![IDW interpolation](figures/Figure_02_maize_idw_interpolation.jpg)
-**Figure 2** — Inverse-distance-weighted interpolation surfaces.
+**Figure 2**, Inverse-distance-weighted interpolation surfaces.
 
 ![NDVI temporal dynamics](figures/Figure_03_maize_ndvi_temporal.jpg)
-**Figure 3** — Temporal NDVI dynamics across the growing season.
+**Figure 3**, Temporal NDVI dynamics across the growing season.
 
 ![Water sampling design](figures/Figure_04_maize_water_sampling.jpg)
-**Figure 4** — Water sampling design and interpolated surfaces.
+**Figure 4**, Water sampling design and interpolated surfaces.
 
 ### Vineyard Pest Monitoring (Quinta da Senhora da Graça)
 
 ![Terrain characterisation](figures/Figure_05_vineyard_terrain.jpg)
-**Figure 5** — Terrain characterisation of the study vineyard.
+**Figure 5**, Terrain characterisation of the study vineyard.
 
 ![Land-use and varietal composition](figures/Figure_06_vineyard_landuse_varietal.jpg)
-**Figure 6** — Land-use and varietal composition.
+**Figure 6**, Land-use and varietal composition.
 
 ![Pheromone trap network](figures/Figure_07_vineyard_pest_trap_network.jpg)
-**Figure 7** — Pheromone trap network and spatio-temporal pest dynamics.
+**Figure 7**, Pheromone trap network and spatio-temporal pest dynamics.
 
 ### Grape Ripening / Brix Prediction (Quinta de Nossa Senhora de Lurdes)
 
 ![Study-site characterisation](figures/Figure_08_grape_study_site.jpg)
-**Figure 8** — Study-site characterisation.
+**Figure 8**, Study-site characterisation.
 
 ![Ripening regression forecast](figures/Figure_09_grape_ripening_regression_forecast.jpg)
-**Figure 9** — Regression-based ripening forecast.
+**Figure 9**, Regression-based ripening forecast.
 
-![Brix — traditional field sampling](figures/Figure_10_grape_brix_traditional_sampling.jpg)
-**Figure 10** — Spatially interpolated Brix values from traditional field
+![Brix, traditional field sampling](figures/Figure_10_grape_brix_traditional_sampling.jpg)
+**Figure 10**, Spatially interpolated Brix values from traditional field
 sampling.
 
-![Brix — UTAD Enology plots](figures/Figure_11_grape_brix_utad_plots.jpg)
-**Figure 11** — Spatially interpolated Brix values from the UTAD Enology
+![Brix, UTAD Enology plots](figures/Figure_11_grape_brix_utad_plots.jpg)
+**Figure 11**, Spatially interpolated Brix values from the UTAD Enology
 experimental plots.
 
 ![Brix by Thiessen polygons](figures/Figure_12_grape_brix_thiessen_polygons.jpg)
-**Figure 12** — Brix values partitioned by Thiessen/Voronoi polygons.
+**Figure 12**, Brix values partitioned by Thiessen/Voronoi polygons.
 
 ![Regression diagnostics and remote sensing](figures/Figure_13_grape_regression_diagnostics_remote_sensing.jpg)
-**Figure 13** — Regression diagnostics and remote-sensing products for ripening
+**Figure 13**, Regression diagnostics and remote-sensing products for ripening
 prediction.
 
-### Maize Fertility Zoning — Model Outputs
+### Maize Fertility Zoning, Model Outputs
 
 ![Descriptive and correlation analysis](figures/Figure_14_maize_descriptive_correlation_analysis.jpg)
-**Figure 14** — Descriptive and correlation analysis for the Coimbra maize
+**Figure 14**, Descriptive and correlation analysis for the Coimbra maize
 field.
 
 ![Model performance and zonation](figures/Figure_15_maize_model_performance_zonation.jpg)
-**Figure 15** — Model performance and zonation outputs.
+**Figure 15**, Model performance and zonation outputs.
 
 ![Variable-rate prescription maps](figures/Figure_16_maize_variable_rate_prescription.jpg)
-**Figure 16** — Variable-rate prescription maps.
+**Figure 16**, Variable-rate prescription maps.
 
 ### Machine-Learning Results (Grape Ripening)
 
 ![Cross-validated model comparison](figures/Figure_17_grape_ml_model_comparison.jpg)
-**Figure 17** — Cross-validated model comparison for Brix prediction across
+**Figure 17**, Cross-validated model comparison for Brix prediction across
 seven models.
 
 ![Feature importance](figures/Figure_18_grape_ml_feature_importance.jpg)
-**Figure 18** — Feature importance for Brix prediction.
+**Figure 18**, Feature importance for Brix prediction.
 
 ![Moran's I](figures/Figure_19_grape_morans_i.jpg)
-**Figure 19** — Global Moran's I spatial autocorrelation of raw Brix values.
+**Figure 19**, Global Moran's I spatial autocorrelation of raw Brix values.
 
 ![Observed vs. predicted](figures/Figure_20_grape_observed_vs_predicted.jpg)
-**Figure 20** — Out-of-fold observed-versus-predicted Brix values.
+**Figure 20**, Out-of-fold observed-versus-predicted Brix values.
 
 ![Spatial interpolation, 30 August](figures/Figure_21_grape_spatial_interpolation_30aug.jpg)
-**Figure 21** — Spatial interpolation surfaces for 30 August Brix.
+**Figure 21**, Spatial interpolation surfaces for 30 August Brix.
 
 ---
 
 ## Repository structure
 
 ```
-manuscript/   The final manuscript (.docx, 30 pages), with all in-text citations
-              hyperlinked to bookmarked reference-list entries (28 references),
-              20 numbered equations covering IDW, NDVI, Pearson correlation,
-              quadratic regression, Random Forest, Gradient Boosting, a
-              Multi-Layer Perceptron, a Stacking Ensemble, regression-kriging
-              (variogram + kriging system), Moran's I, and RMSE/MAE/R², plus a
-              Nomenclature table and 21 figures.
+manuscript/ The final manuscript (.docx, 30 pages), with all in-text citations
+ hyperlinked to bookmarked reference-list entries (28 references),
+ 20 numbered equations covering IDW, NDVI, Pearson correlation,
+ quadratic regression, Random Forest, Gradient Boosting, a
+ Multi-Layer Perceptron, a Stacking Ensemble, regression-kriging
+ (variogram + kriging system), Moran's I, and RMSE/MAE/R², plus a
+ Nomenclature table and 21 figures.
 
-code/         All Python source code used in this project:
-                - train_regression_kriging.py : trains and cross-validates IDW,
-                  Random Forest, Gradient Boosting, a Neural Network (MLP), a
-                  Stacking Ensemble, and hybrid regression-kriging (RF-RK,
-                  GB-RK) models for Brix prediction; also computes Moran's I
-                  and permutation importance.
-                - make_ml_figures.py           : generates the model-comparison,
-                  feature-importance, Moran's I, and observed-vs-predicted
-                  analysis charts.
-                - make_hybrid_map.py           : generates the spatial hybrid
-                  regression-kriging surface map.
-                - make_grid.py                 : builds the labelled A/B/C...
-                  figure grids from the field-photo/GIS-map source images.
-                - translate_legend.py          : translates the Portuguese GIS
-                  legend text in the vineyard-pest trap figures into English.
+code/ All Python source code used in this project:
+ - train_regression_kriging.py : trains and cross-validates IDW,
+ Random Forest, Gradient Boosting, a Neural Network (MLP), a
+ Stacking Ensemble, and hybrid regression-kriging (RF-RK,
+ GB-RK) models for Brix prediction; also computes Moran's I
+ and permutation importance.
+ - make_ml_figures.py : generates the model-comparison,
+ feature-importance, Moran's I, and observed-vs-predicted
+ analysis charts.
+ - make_hybrid_map.py : generates the spatial hybrid
+ regression-kriging surface map.
+ - make_grid.py : builds the labelled A/B/C...
+ figure grids from the field-photo/GIS-map source images.
+ - translate_legend.py : translates the Portuguese GIS
+ legend text in the vineyard-pest trap figures into English.
 
-data/         The field data used to train the machine-learning models:
-                - BRIX_AMT.csv          : 68 georeferenced (UTM) sampling points,
-                  Brix at 5 dates (15 Jul – 30 Aug).
-                - Sample_brix_ndvi.xlsx : same points with paired NDVI values.
-                - BRIX_AMT_V2.xlsx      : original source workbook.
+data/ The field data used to train the machine-learning models:
+ - BRIX_AMT.csv : 68 georeferenced (UTM) sampling points,
+ Brix at 5 dates (15 Jul – 30 Aug).
+ - Sample_brix_ndvi.xlsx : same points with paired NDVI values.
+ - BRIX_AMT_V2.xlsx : original source workbook.
 
-results/      Model outputs:
-                - merged_brix_ndvi_utm.csv       : the cleaned, merged analysis
-                  dataset.
-                - cv_pooled_spatiotemporal.json  : cross-validated RMSE/MAE/R²
-                  for IDW, Random Forest, Gradient Boosting, Neural Network,
-                  Stacking Ensemble, RF-RK, and GB-RK (pooled spatio-temporal,
-                  GroupKFold-by-location design; corresponds to Table 3 in the
-                  manuscript).
-                - cv_model_comparison.json       : per-date, spatial-only
-                  cross-validation results.
-                - morans_i_brix.json             : global Moran's I
-                  spatial-autocorrelation statistic for Brix at each sampling
-                  date (Figure 19).
-                - permutation_importance.json    : permutation importance for
-                  Easting, Northing, Julian day, and NDVI (Figure 18).
+results/ Model outputs:
+ - merged_brix_ndvi_utm.csv : the cleaned, merged analysis
+ dataset.
+ - cv_pooled_spatiotemporal.json : cross-validated RMSE/MAE/R²
+ for IDW, Random Forest, Gradient Boosting, Neural Network,
+ Stacking Ensemble, RF-RK, and GB-RK (pooled spatio-temporal,
+ GroupKFold-by-location design; corresponds to Table 3 in the
+ manuscript).
+ - cv_model_comparison.json : per-date, spatial-only
+ cross-validation results.
+ - morans_i_brix.json : global Moran's I
+ spatial-autocorrelation statistic for Brix at each sampling
+ date (Figure 19).
+ - permutation_importance.json : permutation importance for
+ Easting, Northing, Julian day, and NDVI (Figure 18).
 
-figures/      All 21 manuscript figures, extracted directly from the
-              manuscript, in original figure order (Figure_01–Figure_21).
+figures/ All 21 manuscript figures, extracted directly from the
+ manuscript, in original figure order (Figure_01–Figure_21).
 ```
 
 ## How to Run the Code
@@ -197,9 +197,9 @@ pip install pandas numpy scipy scikit-learn matplotlib
 
 ```bash
 cd code
-python3 train_regression_kriging.py   # trains models, cross-validates, writes results/
-python3 make_ml_figures.py            # writes machine-learning analysis charts
-python3 make_hybrid_map.py            # writes the spatial hybrid surface map
+python3 train_regression_kriging.py # trains models, cross-validates, writes results/
+python3 make_ml_figures.py # writes machine-learning analysis charts
+python3 make_hybrid_map.py # writes the spatial hybrid surface map
 ```
 
 ## Results summary
@@ -214,7 +214,7 @@ available (68 points): cross-validated R² is 0.538 (IDW), 0.520 (Random Forest)
 permutation importance shows Julian day dominates NDVI and spatial coordinates by
 roughly 5:1, and the global Moran's I statistic shows only weak spatial
 autocorrelation in raw Brix values (I = 0.005–0.040 against an expected −0.015
-under complete spatial randomness) — indicating limited spatially structured
+under complete spatial randomness), indicating limited spatially structured
 residual signal for regression-kriging to exploit once the temporal trend is
 removed. The pipeline is a reusable methodological contribution expected to show
 clearer benefits on denser, multi-covariate, and/or multi-season datasets, with
