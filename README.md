@@ -24,34 +24,7 @@ Systems") and its 21 figures are kept for reference in
 
 ## Problem, Methodology, and Results
 
-**Workflow sketch**
-
-![Workflow Sketch](workflow_sketch.png)
-
-[View interactive graphical abstract →](https://halilunaziru73-creator.github.io/Operationalizing-GIS-and-Machine-Learning-across-Contrasting-Cropping-Systems/)
-
-**Problem.** Geographic information systems are routinely used to turn sparse field observations into management maps, but published precision-agriculture case studies rarely state which level of evidence each map actually carries.
-
-**Methodology.** Three Portuguese field campaigns were re-analysed within one validation-tier framework (T0 computational reproducibility, T1 descriptive mapping, T2 in-sample association, T3 out-of-sample predictive validity, T4 agronomic or decision validity, T5 transferability), with predefined comparison criteria instead of crop type as the basis of the synthesis: (i) Case I, maize fertility, yield and variable-rate prescription at Coimbra (16.85 ha; 17,724 yield-monitor points, 1,613 soil-water points, 16 composite soil samples); (ii) Case II, monitoring of the European grapevine moth *Lobesia botrana* with 25 delta traps under mating disruption at Quinta da Senhora da Graça, Douro (42.97 ha); (iii) Case III, grape ripening at Quinta de Nossa Senhora de Lurdes, Vila Real (68 fixed locations sampled on five dates), with Thiessen/Voronoi tessellation, inverse distance weighting, kriging, NDVI, mixed models, Moran's I with power simulations, spatial cross-validation and machine learning.
-
-**Results.** In Case I the yield–deep-soil-water correlation depended strongly on the spatial support of the analysis (r = 0.97 for 16 Thiessen-zone means, 95% CI 0.92–0.99; r = 0.57 at point level), and the lime and NPK prescription equations reproduced a reference recommendation table (R² ≥ 0.97) without being an independent agronomic validation; recalculated input totals changed by 7–15% with the model form. Case II supported descriptive mapping of captures and damage (T1) but not inferences about pest origin, dispersal or treatment timing. In Case III sampling date explained 57% and persistent location effects 42% of Brix variance (intraclass correlation 0.975), yet Brix showed no spatial autocorrelation (Moran's I, all p > 0.09) and point-level NDVI explained at most 6% of Brix variance. No interpolator or machine-learning model predicted Brix at unsampled locations better than a date-mean null model (cross-validated R² 0.32–0.55 against 0.55), whereas a location-anchored forecast issued 15 days before the last sampling reduced the error from 3.40 to 1.59 °Brix. No output reached tier T4 or T5.
-
-## Table of Contents
-
-- [Figures](#figures)
-- [Repository structure](#repository-structure)
-- [How to Run the Code](#how-to-run-the-code)
-- [Results summary](#results-summary)
-- [Data provenance](#data-provenance)
-- [License](#license)
-- [Citation](#citation)
-- [Related work](#related-work)
-
-## Figures
-
-The nine main figures and the nine supplementary figures of the revised manuscript, in the order of the manuscript. Each figure is followed by a short synthesis of what it shows and what it supports. Full captions are in the [revised manuscript](manuscript/Halilu_Sulaiman_Revised_Manuscript.pdf).
-
-### Main figures
+**Main figures**
 
 ![Figure 1](figures/Figure_01_workflow.png)
 
@@ -106,6 +79,33 @@ The nine main figures and the nine supplementary figures of the revised manuscri
 **Figure 9.** Additional analyses of the strength of evidence.
 
 **Synthesis.** Four analyses bound the conclusions. In Case I, spatial block cross-validation shows inverse-distance weighting of yield as the best predictor (R² 0.72, 0.61 and 0.47 at 30, 60 and 120 m) and skill falling with distance from the training data, and the Monte Carlo interval of the potential lime total (35.6 t; 32.8–38.3 t) stays below the uniform rate. In Case III, the Moran's I power simulation shows that structure with a range of 50 m or more would have been detected (power 0.75–0.94) but not structure at the scale of a few vines, and the semivariogram of the location anomaly lies inside the permutation envelope.
+
+[View interactive graphical abstract →](https://halilunaziru73-creator.github.io/Operationalizing-GIS-and-Machine-Learning-across-Contrasting-Cropping-Systems/)
+
+**Problem.** Geographic information systems are routinely used to turn sparse field observations into management maps, but published precision-agriculture case studies rarely state which level of evidence each map actually carries.
+
+**Methodology.** Three Portuguese field campaigns were re-analysed within one validation-tier framework (T0 computational reproducibility, T1 descriptive mapping, T2 in-sample association, T3 out-of-sample predictive validity, T4 agronomic or decision validity, T5 transferability), with predefined comparison criteria instead of crop type as the basis of the synthesis: (i) Case I, maize fertility, yield and variable-rate prescription at Coimbra (16.85 ha; 17,724 yield-monitor points, 1,613 soil-water points, 16 composite soil samples); (ii) Case II, monitoring of the European grapevine moth *Lobesia botrana* with 25 delta traps under mating disruption at Quinta da Senhora da Graça, Douro (42.97 ha); (iii) Case III, grape ripening at Quinta de Nossa Senhora de Lurdes, Vila Real (68 fixed locations sampled on five dates), with Thiessen/Voronoi tessellation, inverse distance weighting, kriging, NDVI, mixed models, Moran's I with power simulations, spatial cross-validation and machine learning.
+
+**Results.** In Case I the yield–deep-soil-water correlation depended strongly on the spatial support of the analysis (r = 0.97 for 16 Thiessen-zone means, 95% CI 0.92–0.99; r = 0.57 at point level), and the lime and NPK prescription equations reproduced a reference recommendation table (R² ≥ 0.97) without being an independent agronomic validation; recalculated input totals changed by 7–15% with the model form. Case II supported descriptive mapping of captures and damage (T1) but not inferences about pest origin, dispersal or treatment timing. In Case III sampling date explained 57% and persistent location effects 42% of Brix variance (intraclass correlation 0.975), yet Brix showed no spatial autocorrelation (Moran's I, all p > 0.09) and point-level NDVI explained at most 6% of Brix variance. No interpolator or machine-learning model predicted Brix at unsampled locations better than a date-mean null model (cross-validated R² 0.32–0.55 against 0.55), whereas a location-anchored forecast issued 15 days before the last sampling reduced the error from 3.40 to 1.59 °Brix. No output reached tier T4 or T5.
+
+## Table of Contents
+
+- [Figures](#figures)
+- [Repository structure](#repository-structure)
+- [How to Run the Code](#how-to-run-the-code)
+- [Results summary](#results-summary)
+- [Data provenance](#data-provenance)
+- [License](#license)
+- [Citation](#citation)
+- [Related work](#related-work)
+
+## Figures
+
+The nine supplementary figures of the revised manuscript, in the order of the manuscript. Each figure is followed by a short synthesis of what it shows and what it supports. Full captions are in the [revised manuscript](manuscript/Halilu_Sulaiman_Revised_Manuscript.pdf).
+
+### Main figures
+
+The nine main figures are shown at the top of this page, under Problem, Methodology, and Results.
 
 ### Supplementary figures
 
