@@ -91,6 +91,7 @@ Systems") and its 21 figures are kept for reference in
 ## Table of Contents
 
 - [Figures](#figures)
+- [Figures of the first version](#figures-of-the-first-version)
 - [Repository structure](#repository-structure)
 - [How to Run the Code](#how-to-run-the-code)
 - [Results summary](#results-summary)
@@ -163,7 +164,91 @@ The nine main figures are shown at the top of this page, under Problem, Methodol
 
 **Synthesis.** These are valid displays of the observed point values, but because Brix has no spatial autocorrelation the smooth transitions between points carry no predictive information and should not be used to delineate harvest zones.
 
-The 21 figures of the first version are kept in [`figures/original_submission/`](figures/original_submission).
+---
+
+## Figures of the first version
+
+The 21 figures of the first version of the manuscript, presented in their original order. They are kept alongside the revised figures above.
+
+### Maize Fertility Zoning (Coimbra)
+
+![Study area](figures/original_submission/Figure_01_maize_study_area.jpg)
+**Figure 1**, Study-area delineation for the Coimbra maize field.
+
+![IDW interpolation](figures/original_submission/Figure_02_maize_idw_interpolation.jpg)
+**Figure 2**, Inverse-distance-weighted interpolation surfaces.
+
+![NDVI temporal dynamics](figures/original_submission/Figure_03_maize_ndvi_temporal.jpg)
+**Figure 3**, Temporal NDVI dynamics across the growing season.
+
+![Water sampling design](figures/original_submission/Figure_04_maize_water_sampling.jpg)
+**Figure 4**, Water sampling design and interpolated surfaces.
+
+### Vineyard Pest Monitoring (Quinta da Senhora da Graça)
+
+![Terrain characterisation](figures/original_submission/Figure_05_vineyard_terrain.jpg)
+**Figure 5**, Terrain characterisation of the study vineyard.
+
+![Land-use and varietal composition](figures/original_submission/Figure_06_vineyard_landuse_varietal.jpg)
+**Figure 6**, Land-use and varietal composition.
+
+![Pheromone trap network](figures/original_submission/Figure_07_vineyard_pest_trap_network.jpg)
+**Figure 7**, Pheromone trap network and spatio-temporal pest dynamics.
+
+### Grape Ripening / Brix Prediction (Quinta de Nossa Senhora de Lurdes)
+
+![Study-site characterisation](figures/original_submission/Figure_08_grape_study_site.jpg)
+**Figure 8**, Study-site characterisation.
+
+![Ripening regression forecast](figures/original_submission/Figure_09_grape_ripening_regression_forecast.jpg)
+**Figure 9**, Regression-based ripening forecast.
+
+![Brix, traditional field sampling](figures/original_submission/Figure_10_grape_brix_traditional_sampling.jpg)
+**Figure 10**, Spatially interpolated Brix values from traditional field
+sampling.
+
+![Brix, UTAD Enology plots](figures/original_submission/Figure_11_grape_brix_utad_plots.jpg)
+**Figure 11**, Spatially interpolated Brix values from the UTAD Enology
+experimental plots.
+
+![Brix by Thiessen polygons](figures/original_submission/Figure_12_grape_brix_thiessen_polygons.jpg)
+**Figure 12**, Brix values partitioned by Thiessen/Voronoi polygons.
+
+![Regression diagnostics and remote sensing](figures/original_submission/Figure_13_grape_regression_diagnostics_remote_sensing.jpg)
+**Figure 13**, Regression diagnostics and remote-sensing products for ripening
+prediction.
+
+### Maize Fertility Zoning, Model Outputs
+
+![Descriptive and correlation analysis](figures/original_submission/Figure_14_maize_descriptive_correlation_analysis.jpg)
+**Figure 14**, Descriptive and correlation analysis for the Coimbra maize
+field.
+
+![Model performance and zonation](figures/original_submission/Figure_15_maize_model_performance_zonation.jpg)
+**Figure 15**, Model performance and zonation outputs.
+
+![Variable-rate prescription maps](figures/original_submission/Figure_16_maize_variable_rate_prescription.jpg)
+**Figure 16**, Variable-rate prescription maps.
+
+### Machine-Learning Results (Grape Ripening)
+
+![Cross-validated model comparison](figures/original_submission/Figure_17_grape_ml_model_comparison.jpg)
+**Figure 17**, Cross-validated model comparison for Brix prediction across
+seven models.
+
+![Feature importance](figures/original_submission/Figure_18_grape_ml_feature_importance.jpg)
+**Figure 18**, Feature importance for Brix prediction.
+
+![Moran's I](figures/original_submission/Figure_19_grape_morans_i.jpg)
+**Figure 19**, Global Moran's I spatial autocorrelation of raw Brix values.
+
+![Observed vs. predicted](figures/original_submission/Figure_20_grape_observed_vs_predicted.jpg)
+**Figure 20**, Out-of-fold observed-versus-predicted Brix values.
+
+![Spatial interpolation, 30 August](figures/original_submission/Figure_21_grape_spatial_interpolation_30aug.jpg)
+**Figure 21**, Spatial interpolation surfaces for 30 August Brix.
+
+---
 
 ---
 
